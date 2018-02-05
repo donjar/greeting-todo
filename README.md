@@ -1,8 +1,5 @@
 # greeting-todo
 
-[![Build Status][travis-badge]][travis-link]
-[![Slack Room][slack-badge]][slack-link]
-
 A todo list in Fish's greeting message
 
 ## Install
@@ -15,12 +12,19 @@ fisher donjar/greeting-todo
 
 ## Usage
 
+Add todo named "clean house"
 ```fish
-greeting-todo
+addtodo clean house
 ```
 
-[travis-link]: https://travis-ci.org/donjar/greeting-todo
-[travis-badge]: https://img.shields.io/travis/donjar/greeting-todo.svg
-[slack-link]: https://fisherman-wharf.herokuapp.com
-[slack-badge]: https://fisherman-wharf.herokuapp.com/badge.svg
+Delete the 2nd todo
+```fish
+deletetodo 2
+```
+
+Clear all todos
+```fish
+cleartodo
+```
+
 [fisherman]: https://github.com/fisherman/fisherman
