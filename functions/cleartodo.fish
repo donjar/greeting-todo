@@ -1,5 +1,4 @@
-# Defined in /home/donjar/.config/fish/functions/cleartodo.fish @ line 1
 function cleartodo
-	set -U TODOS
+  set -U -e TODOS
   echo All todos cleared
 end

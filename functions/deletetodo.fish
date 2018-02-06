@@ -1,6 +1,5 @@
-# Defined in /home/donjar/.config/fish/functions/deletetodo.fish @ line 1
 function deletetodo
-	if not echo $argv | grep -q '^[0-9]\+$'
+  if not echo $argv | grep -q '^[0-9]\+$'
     echo "Usage: deletetodo (number)"
     echo "Example: `deletetodo 2`"
     exit 1
