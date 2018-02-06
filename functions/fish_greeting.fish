@@ -1,4 +1,4 @@
 function fish_greeting
   echo Todos:
-  echo $TODOS | nl -s '. ' -w2
+  cat ~/.todos | nl -s '. ' -w2
 end

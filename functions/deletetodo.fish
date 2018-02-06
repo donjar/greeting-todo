@@ -5,13 +5,7 @@ function deletetodo
     exit 1
   end
 
-  # https://stackoverflow.com/questions/29512897
-  set old_ifs $IFS
-  set IFS
-
-  set old_todo (echo $TODOS | sed -n $argv"p")
-  set -U TODOS (echo $TODOS | sed $argv"d")
-  echo Todo deleted: \"$old_todo\"
-
-  set IFS $old_ifs
+  set old_todo (cat ~/.todos | sed -n $argv"p")
+  sed -i $argv"d" ~/.todos
+  echo "Todo deleted: \"$old_todo\""
 end

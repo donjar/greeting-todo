@@ -1,4 +1,4 @@
 function cleartodo
-  set -U -e TODOS
+  printf '' > ~/.todos
   echo All todos cleared
 end
