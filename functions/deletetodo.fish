@@ -8,4 +8,5 @@ function deletetodo
   set old_todo (cat ~/.todos | sed -n $argv"p")
   sed -i $argv"d" ~/.todos
   echo "Todo deleted: \"$old_todo\""
+  listtodo
 end
